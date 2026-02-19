@@ -7,6 +7,7 @@ export default function Leaderboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // -8000.app.github.dev/api/leaderboard/
   const endpoint = `${API_BASE}/api/leaderboard/`;
 
   const fetchData = useCallback(async () => {

@@ -7,6 +7,7 @@ export default function Activities() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // -8000.app.github.dev/api/activities/
   const endpoint = `${API_BASE}/api/activities/`;
 
   const fetchData = useCallback(async () => {

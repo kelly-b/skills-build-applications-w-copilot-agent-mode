@@ -7,6 +7,7 @@ export default function Teams() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // -8000.app.github.dev/api/teams/
   const endpoint = `${API_BASE}/api/teams/`;
 
   const fetchData = useCallback(async () => {

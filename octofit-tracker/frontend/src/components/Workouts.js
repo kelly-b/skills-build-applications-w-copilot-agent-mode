@@ -7,6 +7,7 @@ export default function Workouts() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // -8000.app.github.dev/api/workouts/
   const endpoint = `${API_BASE}/api/workouts/`;
 
   const fetchData = useCallback(async () => {

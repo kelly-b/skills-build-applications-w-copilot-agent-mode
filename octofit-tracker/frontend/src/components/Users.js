@@ -7,6 +7,7 @@ export default function Users() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // -8000.app.github.dev/api/users/
   const endpoint = `${API_BASE}/api/users/`;
 
   const fetchData = useCallback(async () => {
