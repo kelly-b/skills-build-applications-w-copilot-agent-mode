@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#20c997"/>
+      <stop offset="1" stop-color="#0d6efd"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="20" fill="url(#g)"/>
+  <!-- stylized O with a small dumbbell -->
+  <g transform="translate(20,20) scale(0.6)">
+    <circle cx="40" cy="40" r="28" fill="#fff" opacity="0.14"/>
+    <circle cx="40" cy="40" r="20" fill="#fff"/>
+    <rect x="-4" y="35" width="88" height="10" rx="3" fill="#fff" opacity="0.95" transform="rotate(25 40 40)"/>
+    <rect x="6" y="30" width="8" height="8" rx="2" fill="#20c997" transform="rotate(25 40 40)"/>
+    <rect x="66" y="30" width="8" height="8" rx="2" fill="#0d6efd" transform="rotate(25 40 40)"/>
+  </g>
+</svg>
