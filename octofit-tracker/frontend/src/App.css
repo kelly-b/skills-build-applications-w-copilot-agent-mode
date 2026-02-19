@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- OctoFit UI tweaks --- */
+.container {
+  max-width: 1100px;
+}
+
+/* Brand & layout */
+:root{
+  --bg-start: #071029;
+  --bg-end: #072b43;
+  --brand: #20c997; /* teal */
+  --brand-dark: #198754;
+  --accent: #0d6efd; /* blue */
+  --muted: #6c757d;
+  --card-bg: #ffffff;
+  --glass: rgba(255,255,255,0.04);
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  color: #e9f7f2;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, rgba(13,110,253,0.95), rgba(32,201,151,0.95));
+  box-shadow: 0 4px 18px rgba(2,6,23,0.4);
+}
+.navbar .navbar-brand { color: #fff !important; }
+.brand-logo { width: 36px; height: 36px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.25); }
+.brand-text { color: #fff; font-weight:700; margin-left:4px; }
+.nav-link { color: rgba(255,255,255,0.9); }
+.nav-link.active { color: #071029; background: rgba(255,255,255,0.85); border-radius: 6px; padding: 0.35rem 0.6rem; }
+
+/* Main content card styles */
+.card {
+  border-radius: .6rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(248,249,250,0.98));
+  color: #0b2545;
+}
+.card-header { background: linear-gradient(90deg, rgba(13,110,253,0.06), rgba(32,201,151,0.04)); border-bottom: 1px solid rgba(0,0,0,0.04); }
+
+/* Headings & text */
+h1, h2, h3 { color: var(--brand); text-shadow: 0 1px 0 rgba(255,255,255,0.6); }
+.lead { color: #536b72; }
+
+/* Tables */
+.table thead th { background: linear-gradient(90deg, rgba(13,110,253,0.12), rgba(32,201,151,0.08)); color: #0b2545; }
+.table-striped > tbody > tr:nth-of-type(odd) { background-color: rgba(32,201,151,0.02); }
+.table td code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace; font-size: 0.85em; color: #0b2545; }
+
+/* Buttons */
+.btn-primary { background: linear-gradient(90deg, var(--brand), var(--accent)); border: none; box-shadow: 0 4px 12px rgba(13,110,253,0.15); }
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-outline-secondary { border-color: rgba(11,37,69,0.12); color: #0b2545; }
+
+/* Links */
+a { color: var(--accent); }
+a:hover { color: var(--brand-dark); text-decoration: underline; }
+
+/* Modal overlay tweak */
+.modal.d-block { background: linear-gradient(rgba(2,6,23,0.45), rgba(2,6,23,0.45)); }
+
+/* Misc */
+.card-header h5 { margin: 0; }
+.navbar-brand { font-weight: 700; letter-spacing: .4px; }
+.nav-link.active { font-weight: 600; }
+.modal .modal-title { color: #0b2545; }
+
+pre { background: #f8f9fa; padding: 0.75rem; border-radius: .25rem; }
